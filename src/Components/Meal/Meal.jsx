@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
+import DashBoard from '../dashBoard/dashBoard';
+import BarChartAxios from '../BarChartAxios/BarChartAxios';
 
 const Meal = () => {
     const navigate =useNavigate();
@@ -9,6 +11,8 @@ const Meal = () => {
     return (
         <div>
             <button onClick={goBack}>go back</button>
+            <DashBoard></DashBoard>
+            <BarChartAxios></BarChartAxios>
         </div>
     );
 };
